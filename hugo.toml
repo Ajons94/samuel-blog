@@ -1,4 +1,4 @@
-baseURL = 'https://ajons94.github.io/samuel-blog/'
+baseURL = 'example.com'
 languageCode = 'en-us'
 title = 'Samuel Blog'
 theme = "ananke"
