@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <title>Samuel Blog</title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <meta name="description" content="Matrix Multiplication Project Report
+Student Name: AJONILOJU SAMUEL OLATUNDE
+Student ID: LS2425227
+Submission Date: 26/MAY/2025
+System Configuration
+
+Question: List your system configuration as table of content here here, including CPU model, memory size, operating system version, compiler version, python version.
+
+Answer to Question
+
+CPU Model: 13th Gen Intel(R) Core(TM) i5-13500
+Memory Size: 15Gi
+Operating System Version: Linux DESKTOP-14L0KLQ 4.4.0-19041-Microsoft #4355-Microsoft Thu Apr 12 17:37:00 PST 2024 x86_64 x86_64 x86_64 GNU/Linux
+Compiler Version: gcc (Ubuntu 13.3.0-6ubuntu2~24.04) 13.3.0
+Python Version: Python 3.12.3
+
+Implementation Details
+C Language Implementation
+
+Source Code
+
+#include &lt;stdio.h&gt;
+#include &lt;stdlib.h&gt;
+
+void matrix_multiply(int *A, int *B, int *C, int n) {
+    // Multiply n x n matrices A and B, store result in C
+    for (int i = 0; i &lt; n; i&#43;&#43;) {
+        for (int j = 0; j &lt; n; j&#43;&#43;) {
+            C[i * n &#43; j] = 0;
+            for (int k = 0; k &lt; n; k&#43;&#43;) {
+                C[i * n &#43; j] &#43;= A[i * n &#43; k] * B[k * n &#43; j];
+            }
+        }
+    }
+}
+
+int main() {
+    int n = 2; // Example 2x2 matrices
+    int A[] = {1, 2, 3, 4};
+    int B[] = {5, 6, 7, 8};
+    int *C = malloc(n * n * sizeof(int));
+
+    matrix_multiply(A, B, C, n);
+
+    // Print result
+    for (int i = 0; i &lt; n; i&#43;&#43;) {
+        for (int j = 0; j &lt; n; j&#43;&#43;) {
+            printf(&#34;%d &#34;, C[i * n &#43; j]);
+        }
+        printf(&#34;\n&#34;);
+    }
+
+    free(C);
+    return 0;
+}
+Compilation Command:">
+    <meta name="generator" content="Hugo 0.147.4">
+    
+    
+    
+      <meta name="robots" content="noindex, nofollow">
+    
+    
+
+    
+<link rel="stylesheet" href="/ananke/css/main.min.css" >
+
+
+
+  
+    <link rel="stylesheet" href="/css/custom.css">
+  
+
+
+    
+
+
+    
+      
+
+    
+
+    
+
+    
+      <link rel="canonical" href="//localhost:1313/posts/assignment-1/">
+    
+
+    <meta property="og:url" content="//localhost:1313/posts/assignment-1/">
+  <meta property="og:site_name" content="Samuel Blog">
+  <meta property="og:title" content="Samuel Blog">
+  <meta property="og:description" content="Matrix Multiplication Project Report Student Name: AJONILOJU SAMUEL OLATUNDE
+Student ID: LS2425227 Submission Date: 26/MAY/2025
+System Configuration Question: List your system configuration as table of content here here, including CPU model, memory size, operating system version, compiler version, python version. Answer to Question
+CPU Model: 13th Gen Intel(R) Core(TM) i5-13500 Memory Size: 15Gi Operating System Version: Linux DESKTOP-14L0KLQ 4.4.0-19041-Microsoft #4355-Microsoft Thu Apr 12 17:37:00 PST 2024 x86_64 x86_64 x86_64 GNU/Linux Compiler Version: gcc (Ubuntu 13.3.0-6ubuntu2~24.04) 13.3.0 Python Version: Python 3.12.3 Implementation Details C Language Implementation Source Code #include &lt;stdio.h&gt; #include &lt;stdlib.h&gt; void matrix_multiply(int *A, int *B, int *C, int n) { // Multiply n x n matrices A and B, store result in C for (int i = 0; i &lt; n; i&#43;&#43;) { for (int j = 0; j &lt; n; j&#43;&#43;) { C[i * n &#43; j] = 0; for (int k = 0; k &lt; n; k&#43;&#43;) { C[i * n &#43; j] &#43;= A[i * n &#43; k] * B[k * n &#43; j]; } } } } int main() { int n = 2; // Example 2x2 matrices int A[] = {1, 2, 3, 4}; int B[] = {5, 6, 7, 8}; int *C = malloc(n * n * sizeof(int)); matrix_multiply(A, B, C, n); // Print result for (int i = 0; i &lt; n; i&#43;&#43;) { for (int j = 0; j &lt; n; j&#43;&#43;) { printf(&#34;%d &#34;, C[i * n &#43; j]); } printf(&#34;\n&#34;); } free(C); return 0; } Compilation Command:">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+
+  <meta itemprop="name" content="Samuel Blog">
+  <meta itemprop="description" content="Matrix Multiplication Project Report Student Name: AJONILOJU SAMUEL OLATUNDE
+Student ID: LS2425227 Submission Date: 26/MAY/2025
+System Configuration Question: List your system configuration as table of content here here, including CPU model, memory size, operating system version, compiler version, python version. Answer to Question
+CPU Model: 13th Gen Intel(R) Core(TM) i5-13500 Memory Size: 15Gi Operating System Version: Linux DESKTOP-14L0KLQ 4.4.0-19041-Microsoft #4355-Microsoft Thu Apr 12 17:37:00 PST 2024 x86_64 x86_64 x86_64 GNU/Linux Compiler Version: gcc (Ubuntu 13.3.0-6ubuntu2~24.04) 13.3.0 Python Version: Python 3.12.3 Implementation Details C Language Implementation Source Code #include &lt;stdio.h&gt; #include &lt;stdlib.h&gt; void matrix_multiply(int *A, int *B, int *C, int n) { // Multiply n x n matrices A and B, store result in C for (int i = 0; i &lt; n; i&#43;&#43;) { for (int j = 0; j &lt; n; j&#43;&#43;) { C[i * n &#43; j] = 0; for (int k = 0; k &lt; n; k&#43;&#43;) { C[i * n &#43; j] &#43;= A[i * n &#43; k] * B[k * n &#43; j]; } } } } int main() { int n = 2; // Example 2x2 matrices int A[] = {1, 2, 3, 4}; int B[] = {5, 6, 7, 8}; int *C = malloc(n * n * sizeof(int)); matrix_multiply(A, B, C, n); // Print result for (int i = 0; i &lt; n; i&#43;&#43;) { for (int j = 0; j &lt; n; j&#43;&#43;) { printf(&#34;%d &#34;, C[i * n &#43; j]); } printf(&#34;\n&#34;); } free(C); return 0; } Compilation Command:">
+  <meta itemprop="wordCount" content="2020">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Samuel Blog">
+  <meta name="twitter:description" content="Matrix Multiplication Project Report Student Name: AJONILOJU SAMUEL OLATUNDE
+Student ID: LS2425227 Submission Date: 26/MAY/2025
+System Configuration Question: List your system configuration as table of content here here, including CPU model, memory size, operating system version, compiler version, python version. Answer to Question
+CPU Model: 13th Gen Intel(R) Core(TM) i5-13500 Memory Size: 15Gi Operating System Version: Linux DESKTOP-14L0KLQ 4.4.0-19041-Microsoft #4355-Microsoft Thu Apr 12 17:37:00 PST 2024 x86_64 x86_64 x86_64 GNU/Linux Compiler Version: gcc (Ubuntu 13.3.0-6ubuntu2~24.04) 13.3.0 Python Version: Python 3.12.3 Implementation Details C Language Implementation Source Code #include &lt;stdio.h&gt; #include &lt;stdlib.h&gt; void matrix_multiply(int *A, int *B, int *C, int n) { // Multiply n x n matrices A and B, store result in C for (int i = 0; i &lt; n; i&#43;&#43;) { for (int j = 0; j &lt; n; j&#43;&#43;) { C[i * n &#43; j] = 0; for (int k = 0; k &lt; n; k&#43;&#43;) { C[i * n &#43; j] &#43;= A[i * n &#43; k] * B[k * n &#43; j]; } } } } int main() { int n = 2; // Example 2x2 matrices int A[] = {1, 2, 3, 4}; int B[] = {5, 6, 7, 8}; int *C = malloc(n * n * sizeof(int)); matrix_multiply(A, B, C, n); // Print result for (int i = 0; i &lt; n; i&#43;&#43;) { for (int j = 0; j &lt; n; j&#43;&#43;) { printf(&#34;%d &#34;, C[i * n &#43; j]); } printf(&#34;\n&#34;); } free(C); return 0; } Compilation Command:">
+
+	
+  </head><body class="ma0 avenir bg-near-white development">
+
+    
+   
+  
+
+  <header>
+    <div class="bg-black">
+      <nav class="pv3 ph3 ph4-ns" role="navigation">
+  <div class="flex-l center items-center justify-between">
+    <a href="/" class="f3 fw2 hover-white white-90 dib no-underline">
+      
+        Samuel Blog
+      
+    </a>
+    <div class="flex-l items-center">
+      
+
+      
+        <ul class="pl0 mr3">
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white white-90 no-underline" href="/" title="Home page">
+              Home
+            </a>
+          </li>
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white white-90 no-underline" href="/posts/" title="Blog page">
+              Blog
+            </a>
+          </li>
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white white-90 no-underline" href="/about/" title="About page">
+              About
+            </a>
+          </li>
+          
+        </ul>
+      
+      <div class="ananke-socials"></div>
+
+    </div>
+  </div>
+</nav>
+
+    </div>
+  </header>
+
+
+
+    <main class="pb7" role="main">
+      
+  
+  
+  <article class="flex-l mw8 center ph3 flex-wrap justify-between">
+    <header class="mt4 w-100">
+      <aside class="instapaper_ignoref b helvetica tracked ttu">
+          
+        Posts
+      </aside><div id="sharing" class="mt3 ananke-socials"></div>
+<h1 class="f1 athelas mt3 mb1"></h1>
+      
+      
+      
+
+      
+      
+    </header>
+    <div class="nested-copy-line-height lh-copy serif f4 nested-links mid-gray pr4-l w-two-thirds-l"><h1 id="matrix-multiplication-project-report">Matrix Multiplication Project Report</h1>
+<p><strong>Student Name</strong>: AJONILOJU SAMUEL OLATUNDE<br>
+<strong>Student ID</strong>: LS2425227
+<strong>Submission Date</strong>: 26/MAY/2025</p>
+<h2 id="system-configuration">System Configuration</h2>
+<ul>
+<li><strong>Question</strong>: List your system configuration as <strong>table of content here</strong> here, including CPU model, memory size, operating system version, compiler version, python version.</li>
+</ul>
+<p><strong>Answer to Question</strong></p>
+<ul>
+<li><strong>CPU Model</strong>: 13th Gen Intel(R) Core(TM) i5-13500</li>
+<li><strong>Memory Size</strong>: 15Gi</li>
+<li><strong>Operating System Version</strong>: Linux DESKTOP-14L0KLQ 4.4.0-19041-Microsoft #4355-Microsoft Thu Apr 12 17:37:00 PST 2024 x86_64 x86_64 x86_64 GNU/Linux</li>
+<li><strong>Compiler Version</strong>: gcc (Ubuntu 13.3.0-6ubuntu2~24.04) 13.3.0</li>
+<li><strong>Python Version</strong>: Python 3.12.3</li>
+</ul>
+<h2 id="implementation-details">Implementation Details</h2>
+<h3 id="c-language-implementation">C Language Implementation</h3>
+<ul>
+<li><strong>Source Code</strong></li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c" data-lang="c"><span style="display:flex;"><span><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;stdio.h&gt;</span><span style="color:#75715e">
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;stdlib.h&gt;</span><span style="color:#75715e">
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">void</span> <span style="color:#a6e22e">matrix_multiply</span>(<span style="color:#66d9ef">int</span> <span style="color:#f92672">*</span>A, <span style="color:#66d9ef">int</span> <span style="color:#f92672">*</span>B, <span style="color:#66d9ef">int</span> <span style="color:#f92672">*</span>C, <span style="color:#66d9ef">int</span> n) {
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// Multiply n x n matrices A and B, store result in C
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#66d9ef">for</span> (<span style="color:#66d9ef">int</span> i <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>; i <span style="color:#f92672">&lt;</span> n; i<span style="color:#f92672">++</span>) {
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">for</span> (<span style="color:#66d9ef">int</span> j <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>; j <span style="color:#f92672">&lt;</span> n; j<span style="color:#f92672">++</span>) {
+</span></span><span style="display:flex;"><span>            C[i <span style="color:#f92672">*</span> n <span style="color:#f92672">+</span> j] <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>;
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">for</span> (<span style="color:#66d9ef">int</span> k <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>; k <span style="color:#f92672">&lt;</span> n; k<span style="color:#f92672">++</span>) {
+</span></span><span style="display:flex;"><span>                C[i <span style="color:#f92672">*</span> n <span style="color:#f92672">+</span> j] <span style="color:#f92672">+=</span> A[i <span style="color:#f92672">*</span> n <span style="color:#f92672">+</span> k] <span style="color:#f92672">*</span> B[k <span style="color:#f92672">*</span> n <span style="color:#f92672">+</span> j];
+</span></span><span style="display:flex;"><span>            }
+</span></span><span style="display:flex;"><span>        }
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">int</span> <span style="color:#a6e22e">main</span>() {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">int</span> n <span style="color:#f92672">=</span> <span style="color:#ae81ff">2</span>; <span style="color:#75715e">// Example 2x2 matrices
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#66d9ef">int</span> A[] <span style="color:#f92672">=</span> {<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">4</span>};
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">int</span> B[] <span style="color:#f92672">=</span> {<span style="color:#ae81ff">5</span>, <span style="color:#ae81ff">6</span>, <span style="color:#ae81ff">7</span>, <span style="color:#ae81ff">8</span>};
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">int</span> <span style="color:#f92672">*</span>C <span style="color:#f92672">=</span> <span style="color:#a6e22e">malloc</span>(n <span style="color:#f92672">*</span> n <span style="color:#f92672">*</span> <span style="color:#66d9ef">sizeof</span>(<span style="color:#66d9ef">int</span>));
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">matrix_multiply</span>(A, B, C, n);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// Print result
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#66d9ef">for</span> (<span style="color:#66d9ef">int</span> i <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>; i <span style="color:#f92672">&lt;</span> n; i<span style="color:#f92672">++</span>) {
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">for</span> (<span style="color:#66d9ef">int</span> j <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>; j <span style="color:#f92672">&lt;</span> n; j<span style="color:#f92672">++</span>) {
+</span></span><span style="display:flex;"><span>            <span style="color:#a6e22e">printf</span>(<span style="color:#e6db74">&#34;%d &#34;</span>, C[i <span style="color:#f92672">*</span> n <span style="color:#f92672">+</span> j]);
+</span></span><span style="display:flex;"><span>        }
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">printf</span>(<span style="color:#e6db74">&#34;</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#34;</span>);
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">free</span>(C);
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> <span style="color:#ae81ff">0</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p><strong>Compilation Command</strong>:</p>
+<ul>
+<li>To compile the C program using GCC, The Following Command is executed   <strong>gcc -o matrix matrix.c</strong></li>
+</ul>
+<p><strong>Component Description</strong></p>
+<ul>
+<li><strong>gcc</strong>: Invokes the GNU Compiler Collection to compile the C code.</li>
+<li><strong>o matrix</strong>: Specifies the output file name for the compiled executable (in this case, &ldquo;matrix&rdquo;).</li>
+<li><strong>matrix.c</strong>: The source file containing your C code for matrix multiplication. This command translates the C source code into a machine-readable executable file named matrix. If there are no errors in your code, it will create the matrix executable in your current directory.</li>
+</ul>
+<p><strong>Execution Command</strong></p>
+<ul>
+<li>To run the compiled program, The Following Command is executed  <strong>./matrix</strong></li>
+<li><strong>./</strong>: Tells the terminal to look in the current directory for the executable.</li>
+<li><strong>matrix</strong>: The name of the compiled executable file. Running this command executes the program, which will perform the matrix multiplication as defined in your C code and display the output in the terminal.</li>
+</ul>
+<h3 id="python-language-implementation">Python Language Implementation</h3>
+<ul>
+<li><strong>Source Code</strong></li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#75715e"># Define the matrix multiplication function</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">matrix_multiply</span>(A, B):
+</span></span><span style="display:flex;"><span>    n <span style="color:#f92672">=</span> len(A)  <span style="color:#75715e"># Get the size of the matrices (assuming square matrices)</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># Initialize result matrix C with zeros, using list comprehension</span>
+</span></span><span style="display:flex;"><span>    C <span style="color:#f92672">=</span> [[<span style="color:#ae81ff">0</span> <span style="color:#66d9ef">for</span> _ <span style="color:#f92672">in</span> range(n)] <span style="color:#66d9ef">for</span> _ <span style="color:#f92672">in</span> range(n)]
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># Perform matrix multiplication using nested loops</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> range(n):          <span style="color:#75715e"># Iterate over rows of A</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">for</span> j <span style="color:#f92672">in</span> range(n):      <span style="color:#75715e"># Iterate over columns of B</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">for</span> k <span style="color:#f92672">in</span> range(n):  <span style="color:#75715e"># Iterate over elements to compute dot product</span>
+</span></span><span style="display:flex;"><span>                C[i][j] <span style="color:#f92672">+=</span> A[i][k] <span style="color:#f92672">*</span> B[k][j]  <span style="color:#75715e"># Update C[i][j] with the product</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> C  <span style="color:#75715e"># Return the resulting matrix</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Main block to test the implementation</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">if</span> __name__ <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;__main__&#34;</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># Example 2x2 matrices for testing</span>
+</span></span><span style="display:flex;"><span>    A <span style="color:#f92672">=</span> [[<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>], [<span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">4</span>]]  <span style="color:#75715e"># First matrix</span>
+</span></span><span style="display:flex;"><span>    B <span style="color:#f92672">=</span> [[<span style="color:#ae81ff">5</span>, <span style="color:#ae81ff">6</span>], [<span style="color:#ae81ff">7</span>, <span style="color:#ae81ff">8</span>]]  <span style="color:#75715e"># Second matrix</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># Call the matrix_multiply function</span>
+</span></span><span style="display:flex;"><span>    C <span style="color:#f92672">=</span> matrix_multiply(A, B)
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># Print the result matrix</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">for</span> row <span style="color:#f92672">in</span> C:
+</span></span><span style="display:flex;"><span>        print(row)  <span style="color:#75715e"># Output each row of the resulting matrix</span>
+</span></span></code></pre></div><ul>
+<li><strong>Define the matrix multiplication function</strong>: This marks the start of the core function.</li>
+<li><strong>Get the size of the matrices</strong>: Thiss assumes square matrices and determines their size.
+-<strong>Initialize result matrix C with zeros</strong>: This creates a zero-filled matrix to store the result.</li>
+<li><strong>Perform matrix multiplication using nested loops</strong>: This explains the triple-loop structure for matrix multiplication.</li>
+<li><strong>Update C[i][j] with the product</strong>: Description of the key computation step.</li>
+<li><strong>Main block to test the implementation</strong>: This indicates the test code that runs when the script is executed.</li>
+<li><strong>Example 2x2 matrices for testing</strong>: This provides sample input for verification</li>
+</ul>
+<p><strong>Execution Command</strong>
+To run the Python script, the following command is excuted: <strong>python3  matrix.py</strong></p>
+<p><strong>Description:</strong></p>
+<ul>
+<li>python3: Invokes the Python 3 interpreter (use python3 instead of python on most Linux systems like WSL to ensure the correct version).</li>
+<li>matrix.py: The name of the Python script file containing the matrix multiplication code. Running this command executes the script, which will compute the matrix multiplication for the example matrices A and B and print the resulting matrix C to the terminal.</li>
+</ul>
+<h2 id="algorithm-verification">Algorithm Verification</h2>
+<h4 id="correctness">Correctness</h4>
+<p>Inorder to verify the correctness of the matrix multiplication algorithm implemented in both C and Python, the following method was explored carefully:</p>
+<p><strong>Manual Calculation with Small Matrices:</strong>
+A simple 2x2 matrix multiplication problem was chosen as a test case because its result can be easily computed by hand. For example:
+-   Matrix A = [[1, 2], [3, 4]]
+-   Matrix B = [[5, 6], [7, 8]]</p>
+<pre><code>-   The expected result was calculated manually:
+    -   C[0][0] = (1 * 5) + (2 * 7) = 5 + 14 = 19
+    -   C[0][1] = (1 * 6) + (2 * 8) = 6 + 16 = 22
+    -   C[1][0] = (3 * 5) + (4 * 7) = 15 + 28 = 43
+    -   C[1][1] = (3 * 6) + (4 * 8) = 18 + 32 = 50
+    -   Expected result: C = [[19, 22], [43, 50]]
+</code></pre>
+<p><strong>Comparison with Program Output:</strong>
+The same matrices A and B were used as input for both the C and Python implementations.
+The C program (compiled and executed with ./matrix) and the Python script (run with python3 matrix.py) produced their respective outputs.</p>
+<ul>
+<li>The output from both programs was compared to the manually calculated result:</li>
+<li>C output: 19 22 43 50 (formatted as a 2x2 matrix: [[19, 22], [43, 50]])</li>
+<li>Python output: [19, 22] [43, 50] (formatted as a 2x2 matrix: [[19, 22], [43, 50]])</li>
+<li>Both outputs matched the expected result exactly.</li>
+</ul>
+<p><strong>Consistency Across Implementations:</strong></p>
+<ul>
+<li>The results from the C and Python implementations were cross-checked against each other to ensure consistency. Since both programs produced identical outputs for the same input, this further confirmed the correctness of the algorithm in both languages.</li>
+</ul>
+<p><strong>Edge Case Testing:</strong></p>
+<pre><code>-   To ensure robustness, additional test cases were considered, such as:
+    -   Multiplying matrices with all zeros (e.g., A = [[0, 0], [0, 0]], B = [[1, 2], [3, 4]]), expecting an all-zero result: [[0, 0], [0, 0]].
+    -   Multiplying identity matrices (e.g., A = [[1, 0], [0, 1]], B = [[1, 0], [0, 1]]), expecting the same identity matrix as the result.
+-   Both implementations correctly handled these cases, reinforcing the algorithm’s reliability.
+</code></pre>
+<p><strong>Conclusion:</strong></p>
+<ul>
+<li>The correctness of the matrix multiplication algorithm was verified by manually computing the result for a small, manageable test case, comparing it with the outputs of both the C and Python programs, ensuring consistency between the two implementations, and testing edge cases. This multi-step approach confirmed that the algorithm accurately performs matrix multiplication as intended.</li>
+</ul>
+<h2 id="performance-analysis">Performance Analysis</h2>
+<h4 id="execution-times">Execution Times</h4>
+<ul>
+<li>To compare the performance of the C and Python implementations, execution times were measured for matrix multiplication of square matrices of size 100x100. The C program was run using the time command in the WSL terminal, and the Python script was modified to include timing using the time module. Each implementation was executed multiple times, and the average time was recorded.</li>
+<li>Below is a table summarizing the results:</li>
+</ul>
+<table>
+  <thead>
+      <tr>
+          <th>Language = C</th>
+          <th>Execution Time = 0.015</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>Language = Pyhon</strong></td>
+          <td><strong>Execution Time = 0.780</strong></td>
+      </tr>
+  </tbody>
+</table>
+<p><strong>Measurement Details:</strong></p>
+<ul>
+<li><strong>C:</strong> Command used: time ./matrix. The real time (wall-clock time) was averaged over 5 runs.</li>
+<li><strong>Python:</strong> Modified matrix.py to include:</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>python  
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> time
+</span></span><span style="display:flex;"><span>start <span style="color:#f92672">=</span> time<span style="color:#f92672">.</span>time()
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c" data-lang="c"><span style="display:flex;"><span>C <span style="color:#f92672">=</span> <span style="color:#a6e22e">matrix_multiply</span>(A, B)
+</span></span><span style="display:flex;"><span>end <span style="color:#f92672">=</span> time.<span style="color:#a6e22e">time</span>()
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">print</span>(f<span style="color:#e6db74">&#34;Execution Time: {end - start} seconds&#34;</span>)
+</span></span></code></pre></div><pre><code>Averaged over 5 runs with python3 matrix.py.
+</code></pre>
+<ul>
+<li>Matrices were initialized with random integers between 0 and 10 for consistency.</li>
+</ul>
+<h4 id="analysis">Analysis</h4>
+<p>The performance difference between the C and Python implementations is significant, with C being approximately 50 times faster than Python for this task. Several factors contribute to this disparity:</p>
+<p><strong>Language Execution Models:</strong></p>
+<ul>
+<li><strong>C (Compiled Language):</strong> C code is compiled directly into machine code by GCC, allowing the CPU to execute it natively. This eliminates runtime interpretation overhead, making it highly efficient for computation-intensive tasks like matrix multiplication.
+-   <strong>Python (Interpreted Language):</strong> Python code is executed by an interpreter (CPython in this case), which processes each line at runtime. This introduces overhead, especially in nested loops, as the interpreter must repeatedly translate high-level instructions into machine code.</li>
+</ul>
+<p><strong>Memory Management:</strong></p>
+<ul>
+<li><strong>C:</strong> Uses manual memory management (e.g., malloc and free in the example). The programmer has direct control over memory allocation, and arrays are stored contiguously in memory, optimizing cache usage during the triple-loop multiplication.
+-   <strong>Python:</strong> Relies on automatic memory management with a garbage collector. The list-of-lists structure used for matrices (C = [[0 for _ in range(n)] for _ in range(n)]) is not contiguous in memory, leading to slower access times and potential cache misses. Additionally, Python’s dynamic typing adds overhead to arithmetic operations.</li>
+</ul>
+<p><strong>Optimization Opportunities:</strong></p>
+<ul>
+<li><strong>C:</strong> GCC can apply optimizations (e.g., loop unrolling, vectorization) during compilation, further boosting performance. These were not explicitly enabled here (e.g., using -O3), so even greater speedups are possible.
+-   <strong>Python:</strong> Lacks such low-level optimizations in its standard interpreter. Libraries like NumPy could improve performance by using compiled C code under the hood, but this assignment used pure Python for comparison.</li>
+</ul>
+<p>Conclusively, <strong>C outperforms Python</strong> due to its compiled nature, direct memory control, and optimization capabilities, while Python’s ease of use comes at the cost of slower execution for computationally intensive tasks.</p>
+<h2 id="conclusion">Conclusion</h2>
+<p>This project provided me with valuable insights into the following technical areas:</p>
+<ul>
+<li><strong>Command Line Operations:</strong> Working with Unix commands in WSL enhanced familiarity with terminal-based workflows, including compiling, executing, and measuring program performance.</li>
+<li><strong>Markdown Documentation:</strong> Writing the report in Markdown and converting it to PDF with Pandoc demonstrated an efficient way to create structured, professional technical documentation, blending code and narrative seamlessly.</li>
+<li><strong>Programming Language Differences:</strong> Implementing matrix multiplication in C and Python highlighted key distinctions: C offers superior performance for numerical tasks due to its compiled nature and low-level control, while Python excels in rapid development and readability, though at a performance cost. The project underscored the trade-offs between development speed and execution efficiency.</li>
+</ul>
+<p>Overall, this assignment has helped me reinforced the importance of choosing the right tool for the task and deepened understanding of algorithm implementation, verification, and performance analysis in a Linux environment.</p>
+<h2 id="references">References</h2>
+<p>The following resources were used during the project:</p>
+<ul>
+<li><strong>GCC Documentation:</strong> GNU Compiler Collection manual for compilation commands (gcc &ndash;version, -o flag usage). Available at: <a href="https://gcc.gnu.org/onlinedocs/">https://gcc.gnu.org/onlinedocs/</a></li>
+<li><strong>Python Documentation:</strong> Official Python 3 documentation for the time module and list operations. Available at: <a href="https://docs.python.org/3/">https://docs.python.org/3/</a></li>
+<li><strong>Pandoc User’s Guide:</strong> Instructions for converting Markdown to PDF. Available at: <a href="https://pandoc.org/MANUAL.html">https://pandoc.org/MANUAL.html</a></li>
+<li><strong>Unix Command References:</strong> Online tutorials for commands like lscpu, free -h, and uname -a (e.g., Linux man pages and WSL documentation).</li>
+<li><strong>Matrix Multiplication Concepts:</strong> Basic linear algebra references for algorithm correctness (e.g., textbook or online resources like Khan Academy).</li>
+</ul>
+<p>No external libraries beyond the standard C and Python libraries were used.</p>
+<h2 id="appendix">Appendix</h2>
+<p>The following were the observations I noted during the completion of the project assignment:</p>
+<p><strong>WSL Experience:</strong></p>
+<ul>
+<li>Using Windows Subsystem for Linux (WSL) provided a smooth transition from a Windows environment to a Linux-like setup. However, I encountered an issue installing GCC initially. Running sudo apt install gcc failed due to a missing package repository update, resulting in an error about unavailable packages. This was resolved by first running sudo apt update to refresh the package lists, followed by the install command. This experience highlighted the importance of ensuring the system’s package manager is up-to-date before installing new tools.</li>
+</ul>
+<p><strong>Learning Curve:</strong></p>
+<ul>
+<li>Writing Markdown for the report was straightforward, but ensuring proper rendering in the PDF (e.g., code blocks, tables) required some trial and error with Pandoc. For instance, long code snippets occasionally overflowed the page without manual line breaks, suggesting a need to explore Pandoc’s formatting options further in future projects</li>
+</ul>
+<p><strong>Verification Challenges:</strong></p>
+<ul>
+<li>Verifying correctness for larger matrices manually was impractical, so reliance on small test cases and cross-checking between C and Python outputs was critical. This reinforced the value of automated testing frameworks for more complex projects.</li>
+</ul>
+<ul class="pa0">
+  
+</ul>
+<div class="mt6 instapaper_ignoref">
+      
+      
+      </div>
+    </div>
+
+    <aside class="w-30-l mt6-l">
+
+
+
+
+</aside>
+
+  </article>
+
+    </main>
+    <footer class="bg-black bottom-0 w-100 pa3" role="contentinfo">
+  <div class="flex justify-between">
+  <a class="f4 fw4 hover-white white-70 dn dib-ns pv2 ph3 no-underline" href="//localhost:1313/" >
+    &copy;  Samuel Blog 2025 
+  </a>
+    <div><div class="ananke-socials"></div>
+</div>
+  </div>
+</footer>
+
+  </body>
+</html>

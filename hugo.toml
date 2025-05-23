@@ -1,0 +1,26 @@
+baseURL = 'example.com'
+languageCode = 'en-us'
+title = 'Samuel Blog'
+theme = "ananke"
+
+# Enable colorful styles
+[params]
+  custom_css = ["css/custom.css"]
+
+# Menu configuration
+[[menu.main]]
+  name = "Home"
+  url = "/"
+  weight = 1
+[[menu.main]]
+  name = "Blog"
+  url = "/posts/"
+  weight = 2
+[[menu.main]]
+  name = "About"
+  url = "/about/"
+  weight = 3
+
+[caches]
+  [caches.images]
+    dir = ':cacheDir/images'

@@ -1,0 +1,36 @@
+{{ define "main" }}
+<!-- Posts Header -->
+<section class="posts-header">
+  <div class="header-content">
+    <h1 class="posts-title">My Assignments</h1>
+    <p class="posts-subtitle">Explore my assignments.</p>
+  </div>
+</section>
+
+<!-- Assignment Cards Grid -->
+<div class="main-content">
+  <div class="assignment-grid">
+    {{ range first 4 (where .Site.RegularPages "Section" "posts") }}
+      <a href="{{ .Permalink }}" class="assignment-card-link">
+        <article class="assignment-card">
+          {{ if .Params.thumbnail }}
+            <img src="{{ .Params.thumbnail }}" alt="{{ .Title }}" class="assignment-thumbnail">
+          {{ end }}
+          <div class="assignment-content">
+            <h3 class="assignment-title">{{ .Title }}</h3>
+            <p class="assignment-summary">{{ .Summary | truncate 120 }}</p>
+            <div class="assignment-actions">
+              <span class="assignment-button">View Full Assignment</span>
+              {{ if .Params.download }}
+                <a href="{{ .Params.download }}" class="download-button" download>
+                  <i class="fas fa-download"></i> Download
+                </a>
+              {{ end }}
+            </div>
+          </div>
+        </article>
+      </a>
+    {{ end }}
+  </div>
+</div>
+{{ end }}
