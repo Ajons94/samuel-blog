@@ -34,7 +34,7 @@ I built this app on my trusty Lenovo laptop, nothing fancy, but it got the job d
   - PyInstaller 6.14.1: To turn my code into a .exe file.
   - Requests library (version 2.31.0): For talking to SiliconFlow’s AI.
   - Visual Studio Code: My go-to editor for writing and debugging code.
-- **AI Model**: SiliconFlow’s Meta LLaMA-3-8B (or similar, depending on their dashboard), accessed via their API.
+- **AI Model**: SiliconFlow’s Qwen/Qwen2-7B
 - **Helper**: I got some brainstorming and bug-fixing tips from Google and Grok.
 
 This setup was simple but powerful enough to bring my app to life. I worked mostly at my desk, fueled by coffee and late-night snacks!
