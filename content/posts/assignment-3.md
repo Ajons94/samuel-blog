@@ -1,7 +1,7 @@
 # Assignment 3: My LLM Project
 
 ## Introduction
-For this assignment, I explored how to deploy and use two types of large language models (LLMs): an online model and a local model. My goal was to set them up, integrate them into my coding environment, and see how they could help with programming tasks. I chose Qwen from Silicon Flow for the online model and Ollama for the local model. I tested both, compared them, and even tried a bonus task to see how an LLM could assist with research. Below, I detail every step I took, the results, and my thoughts.
+For this assignment, I explored how to deploy and use two types of large language models (LLMs): an online model and a local model. My goal was to set them up, integrate them into my coding environment, and see how they could help with programming tasks. I chose Qwen from Silicon Flow for the online model and Ollama for the local model. I tested both, compared them, and even tried a bonus task to see how an LLM could assist with research. Below, I've included a summary of every step I took, the results, and my thoughts.
 
 ## 1. Online Model API
 - **Model Selected:** Qwen from Silicon Flow
