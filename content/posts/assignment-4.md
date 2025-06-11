@@ -67,12 +67,12 @@ The SiliconFlow AI gave awesome advice: “Improve drainage for South Field and 
 
 Here’s a screenshot of the app in action:
 
-![App Screenshot](screenshot1.png)
+![App Screenshot](https://raw.githubusercontent.com/Ajons94/samuel-blog/374abc4e620f60f7218a4a218bc3bf50d9eecd7f/Crop%203.jpeg)
 *Caption: My app showing corn field results and the AI typing out advice!*
 
 Another screenshot shows the Q&A:
 
-![Q&A Screenshot](screenshot2.png)
+![Q&A Screenshot](https://raw.githubusercontent.com/Ajons94/samuel-blog/374abc4e620f60f7218a4a218bc3bf50d9eecd7f/Crop%201.jpeg)
 *Caption: Asking the AI how to save my crops, with answers typing out live!*
 
 The log file (`CropHealthLog.txt`) saved everything—scores, risks, advice, and chats—perfect for keeping records.
