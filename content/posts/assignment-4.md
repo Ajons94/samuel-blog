@@ -81,7 +81,9 @@ The log file (`CropHealthLog.txt`) saved everything—scores, risks, advice, and
 
 Want to check out my code or try the app yourself? I’ve uploaded it to GitHub for everyone to see:
 
-[Download Source Code](https://github.com/your-username/CropHealthApp)
+[Download Source Code](https://github.com/Ajons94/Crop-Health-Estimator/blob/main/crop_health.py)
+
+[Executable Downloadable Link](https://github.com/Ajons94/Crop-Health-Estimator/blob/main/crop_health.exe)
 
 ---
 
