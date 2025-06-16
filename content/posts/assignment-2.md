@@ -7,11 +7,11 @@ My goal was to build and launch a simple personal blog website called `samuel-bl
 
 ### I. Website Setup and Deployment
 - **Deployment:**
-  - **Platform:** I chose GitHub Pages because it’s free and simple to use for hosting my site. My blog is live at `https://username.github.io/samuel-blog/` (replace "username" with my actual GitHub username).
+  - **Platform:** I chose GitHub Pages because it’s free and simple to use for hosting my site. My blog is live at `(https://ajons94.github.io/samuel-blog/)
   - **Steps I Took:**
     1. I started by setting up a tool called Hugo. In my terminal, I typed `hugo new site samuel-blog` to create my project, then `cd samuel-blog` and `git init` to start tracking changes.
     2. I picked a theme called Ananke. I added it with `git submodule add https://github.com/theNewDynamic/gohugo-theme-ananke themes/ananke`.
-    3. I edited the `hugo.toml` file to set my site’s address (e.g., `baseURL = "https://username.github.io/samuel-blog/"`), chose the theme (`theme = "ananke"`), and added a custom style file (`custom_css = ["css/custom.css"]`).
+    3. I edited the `hugo.toml` file to set my site’s address (e.g., `baseURL = "https://ajons94.github.io/samuel-blog/"`), chose the theme (`theme = "ananke"`), and added a custom style file (`custom_css = ["css/custom.css"]`).
     4. I made a GitHub repository named `samuel-blog` and turned on GitHub Pages in the settings, using the `gh-pages` branch.
     5. I ran `hugo` to build my site, which created a `public/` folder with all the files.
     6. I pushed the `public/` folder to the `gh-pages` branch on GitHub.
@@ -21,7 +21,7 @@ My goal was to build and launch a simple personal blog website called `samuel-bl
 
 ### II. Version Control with Git
 - **Repository Management:**
-  - **Repository:** My project is stored at `github.com/username/samuel-blog` (replace "username" with my actual GitHub username).
+  - **Repository:** My project is stored at (https://ajons94.github.io/samuel-blog/)
   - **Commits:** I made five clear steps to show my work, each with a purpose:
     1. **Initial Setup:** I created the Hugo site and added the Ananke theme. I saved this with `git commit -m "Initialize Hugo site with Ananke theme"`.
     2. **Custom Styles:** I made a file at `static/css/custom.css` to add bright colors for cards and a hero section. I saved it with `git commit -m "Add custom CSS for hero section and assignment cards"`.
@@ -44,9 +44,9 @@ My goal was to build and launch a simple personal blog website called `samuel-bl
   - **Challenges:** At first, my `/posts/` page showed a “404 not found” error. I fixed it by adding my posts to the `content/posts/` folder and setting `draft: false` in each file so they’d show up.
 
 ### IV. Submission Format
-- **Website URL:** My site is live at `https://username.github.io/samuel-blog/` (replace "username" with my actual GitHub username).
+- **Website URL:** My site is live at `https://ajons94.github.io/samuel-blog/`
 - **Submission:** I’ll email this URL to `canting@buaa.edu.cn` as asked.
-- **Repository:** My work is public at `github.com/username/samuel-blog` (replace "username" with my actual GitHub username).
+- **Repository:** My work is public at https://ajons94.github.io/samuel-blog/
 
 ## My Tools and Choices
 I used Hugo with the Ananke theme because they’re simple and fast. Hugo turns my Markdown posts into a website quickly, and Ananke gave me a nice starting design I could tweak. I stayed away from harder tools like VuePress or React to keep things easy and focus on the main goals.
